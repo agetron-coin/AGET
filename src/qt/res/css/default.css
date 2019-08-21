@@ -1,0 +1,69 @@
+* {
+    font-family: "Ubuntu";
+    font-stretch: semi-expanded;
+    fon
+}
+
+.QFrame {
+background-color:transparent;
+border:0px solid #fff;
+}
+
+.QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
+background:transparent;
+border:1px solid #333;
+}
+
+QTableWidget:focus, QTableView, QTableView:focus { /* Remove focus outline */
+outline:0;
+background:transparent;
+}
+
+QWidget#OverviewPage QFrame {
+background-color:transparent;
+border:0px solid #000;
+}
+
+QToolBar {
+background-color:#ffffff; /*qlineargradient(y1:0, y2: 1, stop: 0 #ffffff, stop: 0.75 #ffffff, stop: 0.99 #ffffff, stop: 1 #ffffff);*/
+border:0px solid #333;
+padding:1;
+margin:0;
+width: 90px;
+}
+
+QToolBar > QToolButton {
+Alignment: left;
+background-color: #ffffff;
+selection-background-color:transparent;
+border:0.5px solid #888;
+border-left: 0px;
+border-right: 0px;
+border-top: 0px;
+min-height:2.5em;
+padding: 0em 0em;
+font-size: 11px;
+color:#231f20;
+width: 90px;
+height: 60px;
+}
+
+QToolBar > QToolButton:checked {
+background-color: qlineargradient(x1:0, x2: 1, stop: 0 #231f20, stop: 0.07 #231f20, stop: 0.0701 #ffffff, stop: 1 #ffffff);
+color:#231f20;
+}
+
+/* QToolBar > QToolButton:hover:!selected { */
+QToolBar > QToolButton:hover {
+background-color: qlineargradient(x1:0, x2: 1, stop: 0 #231f20, stop: 0.07 #231f20, stop: 0.0701 #ffffff, stop: 1 #ffffff);
+color:#231f20;
+}
+
+QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
+background-color: #231f20; /* Do not highlight placeholder on hover */
+}
+
+QToolBar > QToolButton:pressed {
+background-color: qlineargradient(x1:0, x2: 1, stop: 0 #00a300, stop: 0.07 #00a300, stop: 0.0701 #ffffff, stop: 1 #ffffff);
+color:#231f20;
+}
